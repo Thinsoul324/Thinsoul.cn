@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <!-- 默认和设备同宽度 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--  bootstrap css框架-->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--  自定义样式  -->
+    <style>
+        .navbar-brand {
+            padding-top: 10px;
+        }
+
+        main {
+            margin-top: 70px;
+        }
+
+        .thumbnail a {
+            width: 100%;
+            color: #fff;
+        }
+
+        .thumbnail h3 {
+            text-align: center;
+        }
+
+        .navbar-brand img {
+            animation: spin 8s linear infinite;
+        }
+
+        /* 旋转动画 */
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <!--  网站logo-->
+    <link rel="shortcut icon" href=" img/favicon.ico" />
+    <title>前端技术作品展示</title>
+</head>
+
+<body>
+    <!--  导航栏  -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Title and toggle get grouped for better mobile display -->
+            <!-- 标题和切换进行分组，以获得更好的移动显示 -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/favicon.ico" class=" img-circle"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- 收集导航链接，表单和其他内容以进行切换 -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Thinsoul<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="开发中...">Code</a>
+                    </li>
+                    <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="开发中...">投稿</a></li>
+                </ul>
+                <!--  导航栏右侧内容  -->
+                <ul class="nav navbar-nav navbar-right">
+                    <!--  搜索表单  -->
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="更多内容...">
+                        </div>
+                        <<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom"
+                            title="开发中...">搜索</button>
+                    </form>
+                    <!-- 下拉按钮 -->
+
+                    <li class="dropdown" style="margin: 8px;">
+
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span
+                                class="glyphicon glyphicon-menu-hamburger"></span>更多</button>
+                        <ul class="dropdown-menu" id=" dropdownMenu1">
+                            <li><a href="#">意见&问题反馈</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">联系作者</a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <main>
+        <!--   巨幕   -->
+        <div class=" container">
+            <div class="jumbotron">
+                <div class=" container-fluid">
+                    <h1>Welecome to
+                        <small>
+                            <em>WEB's Collection</em>
+                        </small>
+
+                    </h1>
+                </div>
+                <p>展示各种有趣好玩的<span>HTML+CSS+JavaScript</span>作品</p>
+                <p><a role="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                        更多介绍
+                    </a>
+                    <!-- 信息框打开后的内容 -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">From the author</h4>
+                            </div>
+                            <div class="modal-body">
+                                <h1>前言</h1>
+                                <p>内容</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                <button type="button" class="btn btn-primary">确定</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  网页内容 ①-->
+        <div class=" container ">
+            <!--  第一行  -->
+            <div class="row">
+                <!-- one  每次仅展示一格-->
+                <div class="col-xs-6 col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <a href="sunbutton.html"><img src="img/sunbutton.png" alt="SUNBUTTON"
+                                class=" img-responsive img-rounded"></a>
+                        <div class="caption">
+                            <h3>SUNBUTTON</h3>
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne-h">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-success" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseOne-h" aria-expanded="false"
+                                                aria-controls="collapseOne-h">
+                                                HTML代码
+                                            </a><!--  HTML代码查看按钮  -->
+                                    </div>
+                                    <div id="collapseOne-h" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingOne-h">
+                                        <div class="panel-body">
+                                            <pre>&lt;html&gt;&lt;/html&gt;</pre>
+                                        </div><!--  HTML代码文本  -->
+                                    </div>
+                                </div><!--  HTML  -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne-c">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-warning" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseOne-c" aria-expanded="false"
+                                                aria-controls="collapseOne-c">
+                                                CSS代码
+                                            </a><!--  CSS代码查看按钮  -->
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne-c" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingOne-c">
+                                        <div class="panel-body">
+                                            <pre>&lt;style&gt;&lt;/style&gt;</pre>
+                                        </div><!--  CSS代码文本  -->
+                                    </div>
+                                </div><!--  css  -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne-j">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-danger" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseOne-j" aria-expanded="false"
+                                                aria-controls="collapseOne-j">
+                                                Javascript代码
+                                            </a><!--  Javascript代码查看按钮  -->
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne-j" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingOne-j">
+                                        <div class="panel-body">
+                                            <pre>&lt;script&gt;&lt;/script&gt;</pre>
+                                        </div><!--  Javascript代码文本  -->
+                                    </div>
+                                </div><!--  Javascript  -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Two  每次仅展示一格-->
+                <div class="col-xs-6 col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <a href=""><img src="img/01.jpg" alt="" class=" img-responsive img-rounded"></a>
+                        <div class="caption">
+                            <h3>MusicpPlayer</h3>
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo-h">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-success" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseTwo-h" aria-expanded="false"
+                                                aria-controls="collapseTwo-h">
+                                                HTML代码
+                                            </a><!--  HTML代码查看按钮  -->
+                                    </div>
+                                    <div id="collapseTwo-h" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingTwo-h">
+                                        <div class="panel-body">
+                                            <pre>&lt;html&gt;&lt;/html&gt;</pre>
+                                        </div><!--  HTML代码文本  -->
+                                    </div>
+                                </div><!--  HTML  -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo-c">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-warning" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseTwo-c" aria-expanded="false"
+                                                aria-controls="collapseTwo-c">
+                                                CSS代码
+                                            </a><!--  CSS代码查看按钮  -->
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo-c" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingTwo-c">
+                                        <div class="panel-body">
+                                            <pre>&lt;style&gt;&lt;/style&gt;</pre>
+                                        </div><!--  CSS代码文本  -->
+                                    </div>
+                                </div><!--  css  -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo-j">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-danger" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseTwo-j" aria-expanded="false"
+                                                aria-controls="collapseTwo-j">
+                                                Javascript代码
+                                            </a><!--  Javascript代码查看按钮  -->
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo-j" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingTwo-j">
+                                        <div class="panel-body">
+                                            <pre>&lt;script&gt;&lt;/script&gt;</pre>
+                                        </div><!--  Javascript代码文本  -->
+                                    </div>
+                                </div><!--  Javascript  -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Three  每次仅展示一格-->
+                <div class="col-xs-6 col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <a href="#"><img src="img/01.jpg" alt="" class=" img-responsive img-rounded"></a>
+                        <div class="caption">
+                            <h3>three</h3>
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree-h">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-success" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseThree-h" aria-expanded="false"
+                                                aria-controls="collapseThree-h">
+                                                HTML代码
+                                            </a><!--  HTML代码查看按钮  -->
+                                    </div>
+                                    <div id="collapseThree-h" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingThree-h">
+                                        <div class="panel-body">
+                                            <pre>&lt;html&gt;&lt;/html&gt;</pre>
+                                        </div><!--  HTML代码文本  -->
+                                    </div>
+                                </div><!--  HTML  -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree-c">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-warning" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseThree-c" aria-expanded="false"
+                                                aria-controls="collapseThree-c">
+                                                CSS代码
+                                            </a><!--  CSS代码查看按钮  -->
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree-c" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingThree-c">
+                                        <div class="panel-body">
+                                            <pre>&lt;style&gt;&lt;/style&gt;</pre>
+                                        </div><!--  CSS代码文本  -->
+                                    </div>
+                                </div><!--  css  -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree-j">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-danger" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseThree-j" aria-expanded="false"
+                                                aria-controls="collapseThree-j">
+                                                Javascript代码
+                                            </a><!--  Javascript代码查看按钮  -->
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree-j" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingThree-j">
+                                        <div class="panel-body">
+                                            <pre>&lt;script&gt;&lt;/script&gt;</pre>
+                                        </div><!--  Javascript代码文本  -->
+                                    </div>
+                                </div><!--  Javascript  -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Four  每次仅展示一格-->
+                <div class="col-xs-6 col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <a href="#"><img src="img/01.jpg" alt="" class=" img-responsive img-rounded"></a>
+                        <div class="caption">
+                            <h3>Four</h3>
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingFour-h">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-success" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseFour-h" aria-expanded="false"
+                                                aria-controls="collapseFour-h">
+                                                HTML代码
+                                            </a><!--  HTML代码查看按钮  -->
+                                    </div>
+                                    <div id="collapseFour-h" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingFour-h">
+                                        <div class="panel-body">
+                                            <pre>&lt;html&gt;&lt;/html&gt;</pre>
+                                        </div><!--  HTML代码文本  -->
+                                    </div>
+                                </div><!--  HTML  -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingFour-c">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-warning" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseFour-c" aria-expanded="false"
+                                                aria-controls="collapseFour-c">
+                                                CSS代码
+                                            </a><!--  CSS代码查看按钮  -->
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFour-c" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingFour-c">
+                                        <div class="panel-body">
+                                            <pre>&lt;style&gt;&lt;/style&gt;</pre>
+                                        </div><!--  CSS代码文本  -->
+                                    </div>
+                                </div><!--  css  -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingFour-j">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-danger" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseFour-j" aria-expanded="false"
+                                                aria-controls="collapseFour-j">
+                                                Javascript代码
+                                            </a><!--  Javascript代码查看按钮  -->
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFour-j" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingFour-j">
+                                        <div class="panel-body">
+                                            <pre>&lt;script&gt;&lt;/script&gt;</pre>
+                                        </div><!--  Javascript代码文本  -->
+                                    </div>
+                                </div><!--  Javascript  -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--  第二行  -->
+            <div class="row">
+                <!-- Five  每次仅展示一格-->
+                <div class="col-xs-6 col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <a href="#"><img src="img/01.jpg" alt="" class=" img-responsive img-rounded"></a>
+                        <div class="caption">
+                            <h3>five</h3>
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingFive-h">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-success" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseFive-h" aria-expanded="false"
+                                                aria-controls="collapseFive-h">
+                                                HTML代码
+                                            </a><!--  HTML代码查看按钮  -->
+                                    </div>
+                                    <div id="collapseFive-h" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingFive-h">
+                                        <div class="panel-body">
+                                            <pre>&lt;html&gt;&lt;/html&gt;</pre>
+                                        </div><!--  HTML代码文本  -->
+                                    </div>
+                                </div><!--  HTML  -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingFive-c">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-warning" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseFive-c" aria-expanded="false"
+                                                aria-controls="collapseFive-c">
+                                                CSS代码
+                                            </a><!--  CSS代码查看按钮  -->
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFive-c" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingFive-c">
+                                        <div class="panel-body">
+                                            <pre>&lt;style&gt;&lt;/style&gt;</pre>
+                                        </div><!--  CSS代码文本  -->
+                                    </div>
+                                </div><!--  css  -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingFive-j">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-danger" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseFive-j" aria-expanded="false"
+                                                aria-controls="collapseFive-j">
+                                                Javascript代码
+                                            </a><!--  Javascript代码查看按钮  -->
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFive-j" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingFive-j">
+                                        <div class="panel-body">
+                                            <pre>&lt;script&gt;&lt;/script&gt;</pre>
+                                        </div><!--  Javascript代码文本  -->
+                                    </div>
+                                </div><!--  Javascript  -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Six  每次仅展示一格-->
+                <div class="col-xs-6 col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <a href="#"><img src="img/01.jpg" alt="" class=" img-responsive img-rounded"></a>
+                        <div class="caption">
+                            <h3>six</h3>
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingSix-h">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-success" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseSix-h" aria-expanded="false"
+                                                aria-controls="collapseSix-h">
+                                                HTML代码
+                                            </a><!--  HTML代码查看按钮  -->
+                                    </div>
+                                    <div id="collapseSix-h" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingSix-h">
+                                        <div class="panel-body">
+                                            <pre>&lt;html&gt;&lt;/html&gt;</pre>
+                                        </div><!--  HTML代码文本  -->
+                                    </div>
+                                </div><!--  HTML  -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingSix-c">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-warning" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseSix-c" aria-expanded="false"
+                                                aria-controls="collapseSix-c">
+                                                CSS代码
+                                            </a><!--  CSS代码查看按钮  -->
+                                        </h4>
+                                    </div>
+                                    <div id="collapseSix-c" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingSix-c">
+                                        <div class="panel-body">
+                                            <pre>&lt;style&gt;&lt;/style&gt;</pre>
+                                        </div><!--  CSS代码文本  -->
+                                    </div>
+                                </div><!--  css  -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingSix-j">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-danger" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseSix-j" aria-expanded="false"
+                                                aria-controls="collapseSix-j">
+                                                Javascript代码
+                                            </a><!--  Javascript代码查看按钮  -->
+                                        </h4>
+                                    </div>
+                                    <div id="collapseSix-j" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingSix-j">
+                                        <div class="panel-body">
+                                            <pre>&lt;script&gt;&lt;/script&gt;</pre>
+                                        </div><!--  Javascript代码文本  -->
+                                    </div>
+                                </div><!--  Javascript  -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Seven  每次仅展示一格-->
+                <div class="col-xs-6 col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <a href="#"><img src="img/01.jpg" alt="" class=" img-responsive img-rounded"></a>
+                        <div class="caption">
+                            <h3>seven</h3>
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingSeven-h">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-success" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseSeven-h" aria-expanded="false"
+                                                aria-controls="collapseSeven-h">
+                                                HTML代码
+                                            </a><!--  HTML代码查看按钮  -->
+                                    </div>
+                                    <div id="collapseSeven-h" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingSeven-h">
+                                        <div class="panel-body">
+                                            <pre>&lt;html&gt;&lt;/html&gt;</pre>
+                                        </div><!--  HTML代码文本  -->
+                                    </div>
+                                </div><!--  HTML  -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingSeven-c">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-warning" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseSeven-c" aria-expanded="false"
+                                                aria-controls="collapseSeven-c">
+                                                CSS代码
+                                            </a><!--  CSS代码查看按钮  -->
+                                        </h4>
+                                    </div>
+                                    <div id="collapseSeven-c" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingSeven-c">
+                                        <div class="panel-body">
+                                            <pre>&lt;style&gt;&lt;/style&gt;</pre>
+                                        </div><!--  CSS代码文本  -->
+                                    </div>
+                                </div><!--  css  -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingSeven-j">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-danger" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseSeven-j" aria-expanded="false"
+                                                aria-controls="collapseSeven-j">
+                                                Javascript代码
+                                            </a><!--  Javascript代码查看按钮  -->
+                                        </h4>
+                                    </div>
+                                    <div id="collapseSeven-j" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingSeven-j">
+                                        <div class="panel-body">
+                                            <pre>&lt;script&gt;&lt;/script&gt;</pre>
+                                        </div><!--  Javascript代码文本  -->
+                                    </div>
+                                </div><!--  Javascript  -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Eight  每次仅展示一格-->
+                <div class="col-xs-6 col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <a href="#"><img src="img/01.jpg" alt="" class=" img-responsive img-rounded"></a>
+                        <div class="caption">
+                            <h3>eight</h3>
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingEight-h">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-success" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseEight-h" aria-expanded="false"
+                                                aria-controls="collapseEight-h">
+                                                HTML代码
+                                            </a><!--  HTML代码查看按钮  -->
+                                    </div>
+                                    <div id="collapseEight-h" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingEight-h">
+                                        <div class="panel-body">
+                                            <pre>&lt;html&gt;&lt;/html&gt;</pre>
+                                        </div><!--  HTML代码文本  -->
+                                    </div>
+                                </div><!--  HTML  -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingEight-c">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-warning" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseEight-c" aria-expanded="false"
+                                                aria-controls="collapseEight-c">
+                                                CSS代码
+                                            </a><!--  CSS代码查看按钮  -->
+                                        </h4>
+                                    </div>
+                                    <div id="collapseEight-c" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingEight-c">
+                                        <div class="panel-body">
+                                            <pre>&lt;style&gt;&lt;/style&gt;</pre>
+                                        </div><!--  CSS代码文本  -->
+                                    </div>
+                                </div><!--  css  -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingEight-j">
+                                        <h4 class="panel-title">
+                                            <a class="btn btn-danger" role="button" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseEight-j" aria-expanded="false"
+                                                aria-controls="collapseEight-j">
+                                                Javascript代码
+                                            </a><!--  Javascript代码查看按钮  -->
+                                        </h4>
+                                    </div>
+                                    <div id="collapseEight-j" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingEight-j">
+                                        <div class="panel-body">
+                                            <pre>&lt;script&gt;&lt;/script&gt;</pre>
+                                        </div><!--  Javascript代码文本  -->
+                                    </div>
+                                </div><!--  Javascript  -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--test-->
+        </div>
+    </main>
+    <!--  页面底部  -->
+    <div class=" container-fluid">
+        <div class=" well well-sm">
+            <ul class=" list-inline text-center">
+                <li><a href="http://beian.miit.gov.cn/" target="_blank">粤ICP备20041209号-1</a></li>
+		<li>
+                	<div style="width:300px;margin:0 auto; padding:20px 0;">
+			<img src="img/备案图标.png">
+		 	<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44162202000053" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">粤公网安备 44162202000053号</p></a>
+		 	</div>
+		</li>
+            </ul>
+        </div>
+    </div>
+    <!--  引入jQuery  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <!--  bootstrap javascript框架  -->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
